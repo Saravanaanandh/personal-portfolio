@@ -105,49 +105,54 @@ const MySkills = () => {
         <Logo theme='light'/>
         <ParticleComponent theme='light'/>
         <Container className='container' theme={lightTheme}>
+        
         <Main>
           <Title>
-              <Design width={25} height={25} fill='currentColor'/>Design
+              <Design width={25} height={25} fill='currentColor'/>Full Stack Developer
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and simple.
-          </Description>
-          <Description>
-            <strong>
-              I LIKE TO DESIGN
-            </strong>
-            <ul>
-              <li>Web Design</li>
-              <li>Mobile Apps</li>
-            </ul>
-          </Description>
-          <Description>
-            <strong>
-              Tools
-            </strong>
-            <p>Figma</p>
-          </Description>
-        </Main>
-        <Main>
-          <Title>
-              <Develope width={25} height={25} fill='currentColor'/>Frontend Developer
-          </Title>
-          <Description>
-            I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
+            I am a passionate developer dedicated to building scalable, responsive, and user-friendly web applications. I focus on creating clean, efficient, and impactful digital solutions that deliver great user experiences.
           </Description>
           <Description>
             <strong>
               SKILLS
             </strong>
-            <p>Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.</p>
+            <p>Html, Css, Js, Bootstrap, Tailwind, React, Redux, Firebase, Nodejs, Expressjs, MongoDB, MySQL, etc.</p>
           </Description>
           <Description>
             <strong>
               Tools
             </strong>
-            <p>VScode, Github, Codepen etc.</p>
+            <p>VScode, Github, postman, etc.</p>
           </Description>
         </Main>  
+        <Main>
+          <Title>
+            <Develope width={25} height={25} fill='currentColor'/>Problem Solving & Programming
+          </Title>
+          <Description>
+            I am a problem solver passionate about designing efficient algorithms and tackling complex coding challenges. I continuously enhance my skills through practice on platforms like LeetCode.
+          </Description>
+          <Description>
+            <strong>
+              Programming Languages
+            </strong>
+            <p>Python, Java, C, JavaScript</p>
+          </Description>
+          <Description>
+            <strong>
+              Topics & Concepts
+            </strong>
+            <p>Data Structures & Algorithms (DSA), Operating Systems (OS), Computer Networks</p>
+          </Description>
+          <Description>
+            <strong>
+              Platform
+            </strong>
+            <p>LeetCode</p>
+          </Description>
+        </Main>
+
         </Container>
         <BigText text={'MY SKILLS'} top={'75%'} right={'10%'}/>
       </ThemeProvider>

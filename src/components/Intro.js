@@ -105,9 +105,9 @@ const Intro = (props) => {
     >
         <SubBox>
             <Text className='upper'>
-                <h1>Hi,</h1>
-                <h3>I am Saravana,</h3>
-                <h6>I am intrested to develop websites</h6> 
+                <h1>Hello,</h1>
+                <h3>I'm Saravana,</h3>
+                <h6>A Full Stack Developer passionate about building modern, scalable, and user-friendly web applications.</h6>
             </Text>
         </SubBox>
         <SubBox >

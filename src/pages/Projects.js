@@ -12,13 +12,14 @@ import BigText from '../components/BigText.js'
 import { motion } from 'framer-motion'
 
 const Box = styled.div` 
-  height:400vh;
+  height:200vh;
   background-color:${props => props.theme.text};
   display:flex;
   justify-content:space-evenly;
   align-items:center; 
   position:relative;
   overflow:hidden;
+  font-size:1.1rem;
 ` 
 
 const Main = styled(motion.ul)`

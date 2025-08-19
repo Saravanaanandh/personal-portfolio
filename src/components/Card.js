@@ -1,5 +1,4 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React from 'react' 
 import styled from 'styled-components';
 import { Github } from '../Allsvgr.js';
 import { motion } from 'framer-motion';
@@ -55,7 +54,7 @@ const Footer = styled.footer`
     justify-content:space-between;  
 `
 
-const Link = styled(NavLink)`
+const Link = styled.a`
     text-decoration:none;
     background-color:${props => props.theme.body};
     color:${props => props.theme.text};
@@ -69,7 +68,7 @@ ${Box}:hover &{
 }
 `
 
-const Git = styled(NavLink)`
+const Git = styled.a`
     text-decoration:none;
     color:inherit;
     ${Box}:hover &{
@@ -104,10 +103,10 @@ const Card = (props) => {
             {tags.map((tag,id) => <Tag key={id}>#{tag}</Tag>)} 
         </HashTags>
         <Footer>
-            <Link to={{pathname:`${demo}`}} target="_blank">
+            <Link href={`${demo}`} target="_blank">
                 Visit
-            </Link>
-            <Git to={{pathname:`${github}`}}>
+            </Link> 
+            <Git href={`${github}`} target="_blank">
                 <Github width={30} height={30} />
             </Git>
         </Footer>

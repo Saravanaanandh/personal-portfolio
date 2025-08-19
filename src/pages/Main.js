@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 import { YinYang } from '../Allsvgr.js'
 import Intro from '../components/Intro.js'
 import { motion } from 'framer-motion'
-
+import resumeFile from './../assets/saravanawebdev.pdf'
 const rotate = keyframes`
     from{
         transform:rotate(0deg);
@@ -27,6 +27,7 @@ const MainContainer = styled.div`
 h2,h3,h4,h5,h6{
     font-family:'karla',sans-serif;
     font-weight:500;
+    font-size:1.5rem;
 }
 
 `
@@ -34,7 +35,7 @@ h2,h3,h4,h5,h6{
 const Container = styled.div`
     padding:2rem;
 `
-const Contact = styled(NavLink)`
+const Contact = styled.a`
     position:absolute;
     text-decoration:none;
     top:2rem;
@@ -73,7 +74,7 @@ const Project = styled(NavLink)`
     left:1vw;
 }
 `
-const Resume = styled(NavLink)`
+const Resume = styled.a`
     position:absolute;
     text-decoration:none;
     top:2rem; 
@@ -226,11 +227,11 @@ const Main = () => {
 
             <Center click={click}>
                 <YinYang onClick={()=> setClick(!click)} width={click ? 120 : 200} height={click ? 120 : 200}/>
-                <span>click here</span>
+                <span style={{fontSize:'1.1rem'}}>click here</span>
             </Center>
             <Contact 
                 target="_blank" 
-                to={'mailto:saravanaanandh2006@gmail.com'}
+                href={'mailto:saravanaanandh2006@gmail.com?cc=saravanaanandh2006@gmail.com'}
                 color={click ?'dark':'light'}
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
@@ -282,7 +283,7 @@ const Main = () => {
                     Projects
                 </motion.h2>
             </Project>
-            <Resume download to={''} click={click}>
+            <Resume download="saravanawebdev.pdf" href={resumeFile} click={click}>
                 <motion.h2
                     initial={{
                         y:-200,

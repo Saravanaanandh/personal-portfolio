@@ -1,8 +1,7 @@
 
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react' 
 import styled from 'styled-components'
-import { Facebook, Github, LinkedIn, Whatsapp } from '../Allsvgr.js' 
+import {  Github, Instagram, LinkedIn, Whatsapp } from '../Allsvgr.js' 
 import { darkTheme } from './Themes.js'
 import { motion } from 'framer-motion'
 
@@ -37,8 +36,7 @@ const Line = styled(motion.span)`
     @media(max-width:480px){
         background-color:${props=>props.color === 'dark'? props.page === 'main'? darkTheme.body:darkTheme.text : darkTheme.body}; 
     } 
-`
-
+` 
 
 const SocialIcons = (props) => {
 
@@ -49,36 +47,36 @@ const SocialIcons = (props) => {
             animate={{scale:[0,1,1.5,1]}}
             transition={{type:"spring", duration:1,delay:1}}
         >
-            <NavLink style={{color:'inherit'}} target='_blank' to={{pathname:"www.github.com"}}>
-                <Github fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.body:darkTheme.text:darkTheme.body}/>
-            </NavLink>
+            <a style={{color:props.theme}} href="https://www.github.com/Saravanaanandh">
+                <Github fill={props.theme === 'dark' ? props.page === 'main' ?  darkTheme.text:darkTheme.text:darkTheme.body}/>
+            </a>
         </motion.div>
         <motion.div
             initial={{scale:0}}
             animate={{scale:[0,1,1.5,1]}}
             transition={{type:"spring", duration:1,delay:1.2}}
         >
-            <NavLink style={{color:'inherit'}} target='_blank' to={{pathname:"www.likedin.com"}}>  
-                <LinkedIn fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.body:darkTheme.text:darkTheme.body}/> 
-            </NavLink>
+            <a style={{color:'inherit'}} href="https://linkedin.com/in/saravanawebdev">  
+                <LinkedIn fill={props.theme === 'dark' ? props.page === 'main' ?  darkTheme.text:darkTheme.text:darkTheme.body}/> 
+            </a>
         </motion.div>
         <motion.div
             initial={{scale:0}}
             animate={{scale:[0,1,1.5,1]}}
             transition={{type:"spring", duration:1,delay:1.4}}
         >
-            <NavLink style={{color:'inherit'}} target='_blank' to={{pathname:"www.github.com"}}> 
-                <Facebook fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.body:darkTheme.text:darkTheme.body}/> 
-            </NavLink>
+            <a style={{color:'inherit'}} href='https://www.instagram.com/itz__me___saravana18/profilecard/?igsh=MW90Z3pmNXZ2bTl3MQ=='> 
+                <Instagram fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.text:darkTheme.text:darkTheme.body}/> 
+            </a>
         </motion.div>
         <motion.div
             initial={{scale:0}}
             animate={{scale:[0,1,1.5,1]}}
             transition={{type:"spring", duration:1,delay:1.6}}
         >
-            <NavLink style={{color:'inherit'}} target='_blank' to={{pathname:"www.github.com"}}> 
-                <Whatsapp fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.body:darkTheme.text:darkTheme.body}/> 
-            </NavLink>
+            <a style={{color:'inherit'}} href='https://api.whatsapp.com/send?phone=918610100739&text=Hi'> 
+                <Whatsapp fill={props.theme === 'dark' ? props.page === 'main' ? darkTheme.text:darkTheme.text:darkTheme.body}/> 
+            </a>
         </motion.div>
         <Line 
             color={props.theme}

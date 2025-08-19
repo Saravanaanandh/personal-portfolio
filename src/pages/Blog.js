@@ -19,10 +19,11 @@ const MainContainer = styled(motion.div)`
   background-attachment:fixed;
   width:100vw;
   height:auto;
+  font-size:1.1rem;
 `
 
 const Container = styled.div`
-  width:100%; 
+  width:100%;  
   background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
   padding-bottom:5rem;
   `

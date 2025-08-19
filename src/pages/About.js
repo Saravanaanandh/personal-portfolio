@@ -25,7 +25,7 @@ const Main = styled.div`
   border:2px solid ${props => props.theme.text};
   color:${props => props.theme.text};
   width:50vw;
-  height:60vh;
+  height:70vh;
   padding:2rem;
 
   display:flex;
@@ -88,9 +88,10 @@ const About = () => {
           <img src={spaceman} alt="astronant" />
         </Spaceman>
         <Main>
-          I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+          I am Saravana, a dedicated web and software developer with strong expertise in front-end technologies such as HTML, CSS, Tailwind, Bootstrap, and React, and back-end development using Node.js, MongoDB, and MySQL. I also have proficiency in programming languages including Python, Java, and C, which allows me to approach problems with a versatile, logical mindset.
           <br /><br />
-          I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
+          
+          I am passionate about designing scalable, efficient, and user-centric solutions while adhering to best coding practices. My experience spans building responsive web applications, managing databases, and implementing full-stack solutions. I thrive in collaborative environments and continuously seek opportunities to learn and contribute to impactful projects that align with business goals.
           <br /><br />
           I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
         </Main>
