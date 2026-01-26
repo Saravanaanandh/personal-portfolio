@@ -7,7 +7,8 @@ import { NavLink } from 'react-router-dom'
 import { YinYang } from '../Allsvgr.js'
 import Intro from '../components/Intro.js'
 import { motion } from 'framer-motion'
-import resumeFile from './../assets/saravanawebdev.pdf'
+import resumeFile from './../assets/saravana_resume_final.pdf'
+
 const rotate = keyframes`
     from{
         transform:rotate(0deg);
@@ -216,37 +217,30 @@ const Main = () => {
   }, [isFullscreen]);
 
     const [click, setClick] = useState(false);
-
+  const width = window.innerWidth;
+  console.log(width)
   return (
     <MainContainer>
         <Container>
             <DarkDiv click={click}/>
             <HomeBtn/>
             <Logo theme={click ?'dark':'light'}/>
-            <SocialIcons theme={click ?'dark':'light'} page='main'/>
+            <SocialIcons theme={click ?  width < 720? 'light':'dark':'light'} page='main'/>
 
             <Center click={click}>
                 <YinYang onClick={()=> setClick(!click)} width={click ? 120 : 200} height={click ? 120 : 200}/>
                 <span style={{fontSize:'1.1rem'}}>click here</span>
             </Center>
             <Contact 
-                target="_blank" 
-                href={'mailto:saravanaanandh2006@gmail.com?cc=saravanaanandh2006@gmail.com'}
-                color={click ?'dark':'light'}
-                whileHover={{scale:1.1}}
-                whileTap={{scale:0.9}}
-            >
+                href="mailto:saravanaanandh2006@gmail.com"
+                color={click ? 'dark' : 'light'}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
                 <motion.h2
-                    initial={{
-                        y:-200,
-                        transition:{ type: 'spring', duration:1.5, delay: 1}
-                    }}
-                    animate={{
-                        y:0,
-                        transition:{ type: 'spring', duration:1.5, delay: 1}
-                    }}
-                    whileHover={{scale:1.1}}
-                    whileTap={{scale:0.9}}
+                    initial={{ y: -200 }}
+                    animate={{ y: 0 }}
+                    transition={{ type: 'spring', duration: 1.5, delay: 1 }}
                 >
                     Say hi..
                 </motion.h2>
@@ -283,7 +277,7 @@ const Main = () => {
                     Projects
                 </motion.h2>
             </Project>
-            <Resume download="saravanawebdev.pdf" href={resumeFile} click={click}>
+            <Resume download="Saravana's Resume" href={resumeFile} click={click}>
                 <motion.h2
                     initial={{
                         y:-200,

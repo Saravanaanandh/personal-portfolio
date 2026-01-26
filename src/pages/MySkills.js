@@ -117,7 +117,7 @@ const MySkills = () => {
             <strong>
               SKILLS
             </strong>
-            <p>Html, Css, Js, Bootstrap, Tailwind, React, Redux, Firebase, Nodejs, Expressjs, MongoDB, MySQL, etc.</p>
+            <p>Html, Css, Js, Bootstrap, Tailwind, React, Redux, Firebase, Nodejs, Expressjs,SpringBoot, MongoDB, MySQL, etc.</p>
           </Description>
           <Description>
             <strong>

@@ -17,7 +17,7 @@ const Home = styled.button`
     color:#000;
     transition: all 0.4s ease-in-out;
     cursor:pointer;
-    z-index:3;
+    z-index:5;
     display: flex;
     justify-content: center;
     align-items:center;

@@ -17,6 +17,7 @@ const Box = styled(motion.li)`
     justify-content:space-between;  
     flex-direction:column;
     transition:all 0.3s ease; 
+    user-select:none;
 &:hover{
     background-color:${props => props.theme.body};
     color:${props => props.theme.text}; 

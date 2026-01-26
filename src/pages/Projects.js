@@ -10,9 +10,12 @@ import Card from '../components/Card.js'
 import { YinYang } from '../Allsvgr.js'
 import BigText from '../components/BigText.js'
 import { motion } from 'framer-motion'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const Box = styled.div` 
-  height:200vh;
+  width: 100%;
+  height:100vh;
   background-color:${props => props.theme.text};
   display:flex;
   justify-content:space-evenly;
@@ -20,16 +23,21 @@ const Box = styled.div`
   position:relative;
   overflow:hidden;
   font-size:1.1rem;
+
 ` 
 
 const Main = styled(motion.ul)`
   position:fixed;
+  width:100%;
   top:12rem;
-  left:calc(10rem + 15vw);
+  left:5vw; 
   height:40vh;
   display:flex; 
   color:white; 
   z-index:3;
+@media(max-width:480px){
+  left: 12.5vw; 
+}
 `
 const Rotate = styled.span`
   display:flex;
@@ -39,15 +47,15 @@ const Rotate = styled.span`
   right:1rem;
   bottom:1rem; 
 
-&>*:first-child{ 
-  width:80px;
-  height:80px;
-}
+// &>*:first-child{ 
+//   width:80px;
+//   height:80px;
+// }
 @media(max-width:480px){
-  &>*:first-child{ 
-      width:30px;
-      height:30px;
-  }
+  // &>*:first-child{ 
+  //     width:30px;
+  //     height:30px;
+  // }
 }
 `
 
@@ -78,6 +86,11 @@ const Projects = () => {
 
     return ()=> window.removeEventListener('scroll',handleScroll);
   },[])
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+};
   return (
     <Box>
       <ThemeProvider theme={darkTheme}>
@@ -86,11 +99,17 @@ const Projects = () => {
         <Logo theme='dark'/>
         <ParticleComponent theme='dark'/> 
         <Main ref={ref} variants={container} initial='hidden' animate='show'>
-          {
-            Work.map( work => {
-              return <Card key={work.id} data={work}/>
-            })
-          }
+          <AliceCarousel
+            mouseTracking
+            items={
+              Work.map( work => {
+                return <Card key={work.id} data={work}/>
+              })
+            }
+            responsive={responsive} 
+            disableDotsControls
+            disableButtonsControls
+          />
         </Main>
         <Rotate ref={yinyang}>
           <YinYang classname='yinyang' fill={darkTheme.text}/>
