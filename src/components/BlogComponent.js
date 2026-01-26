@@ -59,7 +59,8 @@ ${Box}:hover &{
 `
 const HashTags = styled.div`
     padding:0.5rem 0;
-
+    display:flex;
+    flex-wrap: wrap;
 @media(max-width:480px){
     padding:0.3rem 0; 
 }

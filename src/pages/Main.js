@@ -232,7 +232,7 @@ const Main = () => {
                 <span style={{fontSize:'1.1rem'}}>click here</span>
             </Center>
             <Contact 
-                href="mailto:saravanaanandh2006@gmail.com"
+                href="mailto:saravanawebdev@gmail.com"
                 color={click ? 'dark' : 'light'}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}

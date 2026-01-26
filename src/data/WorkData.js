@@ -19,11 +19,11 @@ export const Work = [
     },
     {
         id:3,
-        name:"Blood Donation website",
+        name:"GCES Bloodline",
         description:"It was completly built using MERN stack. This website useful for connecting donors and recipients through online.",
-        tags:["MERN","Blood"],
+        tags:["MERN","GCES","Blood"],
         
-        demo:"https://blood-donation-o7z9.onrender.com",
+        demo:"https://gcesbloodline.onrender.com",
         github:"https://github.com/Saravanaanandh/blood-donation"
         
     } 
