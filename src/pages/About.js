@@ -88,7 +88,7 @@ const About = () => {
           <img src={spaceman} alt="astronant" />
         </Spaceman>
         <Main>
-          I am Saravana, a dedicated web and software developer with strong expertise in front-end technologies such as HTML, CSS, Tailwind, Bootstrap, and React, and back-end development using Springboot, Node.js, MongoDB, and MySQL. I also have proficiency in programming languages including Python, Java and C, which allows me to approach problems with a versatile, logical mindset.
+          I am Saravana, a dedicated web and software developer with strong expertise in front-end technologies such as HTML, CSS, Tailwind, and React, and back-end development using Springboot, Node.js, MongoDB, and MySQL. I also have proficiency in programming languages including Python, Java and C, which allows me to approach problems with a versatile, logical mindset.
           <br /><br />
           
           I am passionate about designing scalable, efficient, and user-centric solutions while adhering to best coding practices. My experience spans building responsive web applications, managing databases, and implementing full-stack solutions. I thrive in collaborative environments and continuously seek opportunities to learn and contribute to impactful projects that align with business goals.
